@@ -1,0 +1,67 @@
+.popup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  max-width: 457.3px;
+  max-height: 618.01px;
+  background: linear-gradient(0deg, #000000, #000000), linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+  z-index: 1000;
+  border: 1px solid #FFFFFF33;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 22px;
+}
+
+.popupContent {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+.textContent {
+  align-items: left;
+  width: 100%;
+}
+
+.nftName {
+  font-family: Cinzel;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+  text-transform: uppercase;
+}
+
+.nftDescription {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(132, 132, 132);
+}
+
+.continueButton {
+  width: 155.72px;
+  height: 63.08px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #627EEA 54.37%, #EC4467 111.49%);
+  box-shadow: 0px 0px 30px 14px #B643ED4A;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  cursor: pointer;
+}

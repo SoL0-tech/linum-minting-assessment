@@ -1,0 +1,311 @@
+.containerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  color: white;
+  font-family: Arial, sans-serif;
+  background: 
+    /* left ellipse */
+    radial-gradient(ellipse 40.39% 40.39% at 50% 50%, rgb(222,143,255, 0.4) 0%, rgb(117,61,235, 0.4) 45.83%, #000000 100%),
+    /* top left ellipse */
+    radial-gradient(ellipse 40.39% 40.39% at 50% 50%, rgb(222,143,255, 0.4) 0%, rgb(117,61,235, 0.4) 45.83%, #000000 100%),
+    /* top right gradient */
+    linear-gradient(210deg, rgb(204,255,166, 0.4) 13.4%, rgb(254,230,118, 0.4) 45.42%, #000000 86.6%),
+    /* center ellipse */
+    radial-gradient(40.39% 40.39% at 50% 50%, rgb(52,199,123, 0.4) 0%, #000000 100%),
+    /* right ellipse */
+    radial-gradient(40.39% 40.39% at 50% 50%, rgb(236,68,103, 0.4) 0%, rgb(123,35,54, 0.4) 47.92%, #000000 100%),
+    /* base color */
+    rgba(0, 0, 0, 0.5);
+  background-size: 
+    820.79px 820.79px,
+    820.79px 820.79px,
+    912.25px 912.25px,
+    548.36px 548.36px,
+    776.50px 776.50px;
+  background-position:
+    -336.68px 185.61px,
+    -336.68px -384.33px,
+    849.97px -487.59px,
+    438.59px 321.83px,
+    923px 285.27px;
+  background-repeat: no-repeat;
+  border-radius: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.walletButton {
+  background:none;
+  outline: none;
+  box-shadow: none;
+  border: none; 
+  vertical-align: middle;
+}
+
+.walletButton:hover {
+  cursor: pointer;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+}
+
+.headerBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 200px;
+  padding-right: 200px;
+  margin-left: 200px;
+  margin-right: 200px;
+  width: 100%;
+  height: 216.14px;
+  max-width: 1140px;
+  border: 1px solid #FFFFFF;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.headerBox h2 {
+  font-family: Cinzel;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+  background: linear-gradient(90deg, #E7E7E7 1.14%, #9E9E9E 28.83%, #F2F2F2 57.49%, #949494 89.98%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.headerBox h2 span {
+  font-size: 44px;
+}
+
+.headerBox p {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-family: Cinzel;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.title span {
+  background-image: linear-gradient(90deg, #627EEA 54.37%, #EC4467 111.49%);
+  color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+}
+
+.titleSmaller {
+  font-size: 40px;
+}
+
+.form {
+  max-width: 500px;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0;
+}
+
+.form h2 {
+  margin-bottom: 1rem;
+}
+
+.form p {
+  margin-bottom: 2rem;
+}
+
+.form input {
+  background-color: #383838;
+  color: #FFFFFF;
+}
+
+.uploadButtonWrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.uploadButton {
+  width: 100%;
+  height: 94px;
+  border-radius: 5px;
+  border: 2px dashed #aaa;
+  color: white;
+  background-color: #333;
+  padding: 8px 20px;
+  margin-bottom: 12px;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+}
+
+.uploadButton:hover {
+  cursor: pointer;
+}
+
+.uploadButton img {
+  margin-right: 6px;
+  vertical-align: middle;
+  margin-bottom: 4px;
+}
+
+.uploadButtonWrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.uploadStatus {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 94px;
+  width: 100%;
+  color: white;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 8px 20px 16px 0px;
+}
+
+.resetFileButton {
+  margin-left: 8px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.textInput,
+.textArea {
+  width: 100%;
+  max-width: 544.16px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #383838;
+  color: white;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.textInput {
+  height: 59.29px;
+  border: 1px solid #9E9E9E;
+  border-radius: 5px;
+}
+
+.textArea {
+  height: 157.94px;
+  border: 1px solid #9E9E9E;
+  border-radius: 5px;
+}
+
+.textInput::placeholder {
+  color: white;
+}
+
+.textArea::placeholder {
+  color: white;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mintButton,
+.listButton,
+.connectWalletButton {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 262.08px;
+  height: 63.08px;
+  border-radius: 3px;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.mintButton {
+  background: none;
+}
+
+.listButton {
+  background: linear-gradient(90deg, #627EEA 54.37%, #EC4467 111.49%);
+  box-shadow: 0px 0px 30px 14px #B643ED4A;
+}
+
+.connectWalletButton {
+  background: linear-gradient(90deg, #627EEA 54.37%, #EC4467 111.49%);
+  box-shadow: 0px 0px 30px 14px #B643ED4A;
+  width: 100%;
+}
+
+.footer {
+  padding: 1rem 2rem;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+}
+
+.blur {
+  filter: blur(5px);
+}
